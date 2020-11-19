@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+
+\usepackage{listings}
+
+
+\title{qflow documenation}
+\author{
+       JN
+}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+\section{Terminology}
+VMC simulation - A complete VMC simulation using
+
+\section{qflow.training}
+\textbf{ qflow.training.train( \textit{psi,
+    H,
+    sampler,
+    iters,
+    samples,
+    gamma,
+    optimizer,
+    verbose,
+    call\_backs,
+    call\_back\_resolution
+    })
+}
+
+\begin{enumerate}
+\item    psi - Wavefunction class from qflow.wavefunctions 
+\item    H - Hamiltonian class from qflow.hamiltonians 
+\item    sampler - Sampler class from qflow.samplers
+\item    iters - Number of complete VMC simulations used during training
+\item    samples -
+\item    gamma -
+\item    optimizer - 
+\item    verbose -
+\item    call\_backs -
+\item    call\_back\_resolution -
+\end{enumerate}
+
+
+
+\section{qflow.Hamiltonian}
+\textbf{qflow.Hamiltonian.optimize\_wavefunction( \textit{ psi, 
+	sampler, 
+	iterations, 
+	samples,
+	optimizer, 
+	gamma, 
+	verbose 
+	})
+}
+
+\begin{enumerate}
+\item    psi - Wavefunction class from qflow.wavefunctions 
+\item    sampler -  Sampler class from qflow.samplers
+\item    iterations - Number of complete VMC simulations used during training
+\item    samples - 
+\item    optimizer -
+\item    gamma -
+\item    verbose - 
+\end{enumerate}
+
+optimize\_wavefunction uses a $0.2$ burn-in ratio to the total samples in each iteration. 
+\end{document}
